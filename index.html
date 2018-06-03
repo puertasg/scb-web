@@ -27,30 +27,34 @@
             <div id="collabs" class="col-6">
 
             </div>
+
+
             <div class="col-6">
-                <div class="row">
-                    <label for="inputBanque" class="col-form-label col-4">Banque</label>
-                    <div class="col-8 pr-0">
-                        <input type="text" id="inputBanque" class="form-control" required>
+                <form id="formBanque">
+                    <div class="form-group row">
+                        <label for="inputBanque" class="col-form-label col-4">Banque</label>
+                        <div class="col-8 pr-0">
+                            <input type="text" id="inputBanque" name="id_banque" class="form-control" required>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <label for="inputBic" class="col-form-label col-4">BIC</label>
-                    <div class="col-8 pr-0">
-                        <input type="text" id="inputBic" class="form-control" required>
+                    <div class="form-group row">
+                        <label for="inputBic" class="col-form-label col-4">BIC</label>
+                        <div class="col-8 pr-0">
+                            <input type="text" id="inputBic" name="bic" class="form-control" required>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <label for="inputIban" class="col-form-label col-4">IBAN</label>
-                    <div class="col-8 pr-0">
-                        <input type="text" id="inputIban" class="form-control" required>
+                    <div class="form-group row">
+                        <label for="inputIban" class="col-form-label col-4">IBAN</label>
+                        <div class="col-8 pr-0">
+                            <input type="text" id="inputIban" name="iban" class="form-control" required>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="ml-auto p-1">
-                        <button type="button" id="btn-sav" class="btn btn-success">Sauvegarder</button>
+                    <div class="form-group row">
+                        <div class="ml-auto p-1">
+                            <input type="submit" value="Sauvegarder" class="btn btn-success">
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
