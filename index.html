@@ -1,14 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hello</title>
-</head>
-<body>
+<!doctype html>
+<html lang="fr">
 
-    <h1>Hello branche gh-pages</h1>
-    
+<head>
+    <title>SGP - Saisie</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./bootstrap-4.1.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>SGP - Saisie des coordonées bancaires</h1>
+        </div>
+        <div class="row">
+            <label for="filtreDepartement" class="col-form-label col-4">Filtrer par département : </label>
+            <div class="col-8 pr-0">
+                <select id="filtreDepartement" class="form-control">
+
+                </select>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div id="collabs" class="col-6">
+
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <label for="inputBanque" class="col-form-label col-4">Banque</label>
+                    <div class="col-8 pr-0">
+                        <input type="text" id="inputBanque" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="inputBic" class="col-form-label col-4">BIC</label>
+                    <div class="col-8 pr-0">
+                        <input type="text" id="inputBic" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="inputIban" class="col-form-label col-4">IBAN</label>
+                    <div class="col-8 pr-0">
+                        <input type="text" id="inputIban" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="ml-auto p-1">
+                        <button type="button" id="btn-sav" class="btn btn-success">Sauvegarder</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
+
 </html>
