@@ -36,8 +36,7 @@ $("#collabs").on("click", "td", function () {
         type: "GET",
         url: "https://gauthier-sgp-api.herokuapp.com/api/collaborateurs/" + dernierMatricule + "/banque",
         success: function (data) {
-            //$("#inputBanque").val(data.nomBanque);
-            $("#inputBanque").val(data.id);
+            $("#inputBanque").val(data.nomBanque);
             $("#inputIban").val(data.iban);
             $("#inputBic").val(data.bic)
         },
@@ -58,8 +57,7 @@ $("#formBanque").on("submit", function (e) {
 
         //Création d'un objet JSON banque
         var banque = {
-            //"nomBanque": $("#inputBanque").val(),
-            "id": $("#inputBanque").val(),
+            "nomBanque": $("#inputBanque").val(),
             "iban": $("#inputIban").val(),
             "bic": $("#inputBic").val()
         };
